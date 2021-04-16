@@ -7,14 +7,23 @@
 
   &_full {
     margin-left: pxToRem(11);
+    margin-top: pxToRem(10);
   }
 
   &_mobile {
     height: 100%;
   }
 
-  &__list {
+  &_full &__list {
     display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(xl) {
+      justify-content: start;
+    }
+  }
+
+  &__list {
     padding: 0;
     margin: 0;
     list-style-type: none;

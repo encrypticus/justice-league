@@ -1,0 +1,33 @@
+.user-bar {
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn {
+    display: block;
+    width: pxToRem(20);
+    height: pxToRem(20);
+    background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+    &_search {
+      background-image: url(img/search-icon.svg);
+    }
+
+    &_notify {
+      background-image: url(img/notify-icon.svg);
+      width: pxToRem(21);
+      height: pxToRem(25);
+    }
+
+    &_user {
+      background-image: url(img/user-icon.svg);
+    }
+  }
+}

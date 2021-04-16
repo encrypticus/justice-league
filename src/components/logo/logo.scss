@@ -17,6 +17,8 @@
     font-family: Lemon, Arial, sans-serif;
     color: $white;
     background-image: url(img/logo-border.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &__label {

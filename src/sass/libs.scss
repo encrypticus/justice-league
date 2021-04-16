@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/bootstrap-grid';
 
-//$hamburger-layer-width: 40px;
+$hamburger-layer-width: 30px;
 //$hamburger-layer-height: 4px;
 //$hamburger-layer-spacing: 6px;
 //$hamburger-padding: 10px;
@@ -26,3 +26,5 @@ $hamburger-layer-color: #fff;
 //  alchemy-r
 //);
 @import '~magic-burgers/src/scss/hamburger';
+@import '~metismenujs/scss/metismenujs';
+@import '~onoffcanvas/scss/onoffcanvas';

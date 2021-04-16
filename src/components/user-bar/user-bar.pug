@@ -1,0 +1,29 @@
+mixin user-bar(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' user-bar_' + modsList[i].trim();
+      }
+    }
+
+  .user-bar(class=allMods)&attributes(attributes)
+    +user-bar-btn('search', 'search')
+    +user-bar-btn('notifications', 'notify')
+    +user-bar-btn('user menu', 'user')
+
+mixin user-bar-btn(label, mods)
+  -
+    // список модификаторов
+      var allMods = '';
+      if(typeof(mods) !== 'undefined' && mods) {
+        var modsList = mods.split(',');
+        for (var i = 0; i < modsList.length; i++) {
+          allMods = allMods + ' user-bar__btn_' + modsList[i].trim();
+        }
+      }
+
+  button.user-bar__btn(class=allMods, aria-label=label)&attributes(attributes)
+    
