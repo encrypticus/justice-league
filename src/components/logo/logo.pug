@@ -1,0 +1,16 @@
+mixin logo(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' logo_' + modsList[i].trim();
+      }
+    }
+
+  .logo(class=allMods)&attributes(attributes)
+    a.logo__link(href="/")
+      span.logo__icon M
+      span.logo__label box
+    

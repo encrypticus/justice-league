@@ -8,6 +8,8 @@ $grid-breakpoints: (
 @import '~bootstrap/scss/mixins/breakpoints';
 
 @import 'variables';
+@import 'functions';
+@import 'fonts';
 
 html {
   font-size: $font-size;
@@ -38,4 +40,5 @@ ul {
 
 @import '../partials/page-header/page-header';
 @import '../partials/nav-bar/nav-bar';
+@import '../components/logo/logo';
 //@import '../components/main-nav/main-nav';

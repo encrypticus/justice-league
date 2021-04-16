@@ -1,3 +1,8 @@
 .page-header {
+  padding: pxToRem(15) 0;
+  background-color: $black;
 
+  &__logo-wrapper {
+    margin-left: 5px;
+  }
 }

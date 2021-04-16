@@ -31,6 +31,9 @@ module.exports = (options = {}) => {
             process.env.mode === 'development' ? styleLoader(options.styleLoader) : miniCssExtractPlugin.loader,
             cssLoader(options.cssLoader),
             postcssLoader(options.postcssLoader),
+            {
+              loader: 'resolve-url-loader'
+            },
             sassScssLoader(options.sassScssLoader)
           ]
         }

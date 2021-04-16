@@ -1,0 +1,29 @@
+.logo {
+  $block-name: &; // #{$block-name}__element
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: pxToRem(70);
+    height: pxToRem(70);
+    font-size: pxToRem(40);
+    font-family: Lemon, Arial, sans-serif;
+    color: $white;
+    background-image: url(img/logo-border.svg);
+  }
+
+  &__label {
+    margin-left: pxToRem(15);
+    font-size: pxToRem(40);
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 500;
+    color: $white;
+  }
+}

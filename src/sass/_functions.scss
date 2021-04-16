@@ -1,5 +1,5 @@
 // Переводит px в rem
-@function pxToRem($target, $context: 16) {
+@function pxToRem($target, $context: 18) {
   @return ($target / $context) + rem;
 }
 
