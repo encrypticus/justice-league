@@ -12,11 +12,13 @@ $grid-breakpoints: (
 @import 'fonts';
 
 html {
+  height: 100%;
   font-size: $font-size;
   font-family: $font-family;
 }
 
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -39,6 +41,6 @@ ul {
 }
 
 @import '../partials/page-header/page-header';
-@import '../partials/nav-bar/nav-bar';
+//@import '../partials/nav-bar/nav-bar';
 @import '../components/logo/logo';
-//@import '../components/main-nav/main-nav';
+@import '../components/main-nav/main-nav';

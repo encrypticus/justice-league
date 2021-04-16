@@ -1,7 +1,12 @@
 header.page-header
+  .onoffcanvas.is-left#mob-menu-canvas
+    +main-nav('1', 'mobile')
   .container-fluid
-    .row
-      .col
+    .row.align-items-center
+      .col-2
         .page-header__logo-wrapper
           +logo
-  //include ../nav-bar/nav-bar
+      .col-2.d-flex.d-md-none.justify-content-end.ml-auto
+        +hamburger('minify')(data-toggle='onoffcanvas', data-target='#mob-menu-canvas')
+      .col-4.d-none.d-md-block.offset-2
+        +main-nav('1', 'full')
