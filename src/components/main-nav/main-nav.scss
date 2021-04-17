@@ -1,5 +1,7 @@
 @import '../../sass/functions';
 @import '../../sass/variables';
+@import 'onoffcanvas/variables';
+@import 'onoffcanvas/onoffcanvas';
 
 .main-nav {
   $block-name: &; // имя блока - .main-nav
@@ -32,7 +34,9 @@
 
   &__item {
     position: relative;
+  }
 
+  &_full &__item {
     &_active {
       a {
         position: relative;

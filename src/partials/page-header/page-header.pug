@@ -1,6 +1,10 @@
 header.page-header
   .onoffcanvas.is-left#mob-menu-canvas
-    +main-nav('1', 'mobile')
+    .page-header__bar-wrapper
+      +user-bar
+    .onoffcanvas__inner
+      +main-nav('1', 'mobile')
+
   .container-fluid
     .row.align-items-center
       .col.col-lg-3.col-xl-2

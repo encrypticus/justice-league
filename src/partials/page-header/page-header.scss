@@ -5,4 +5,9 @@
   &__logo-wrapper {
     margin-left: 5px;
   }
+
+  &__bar-wrapper {
+    padding: pxToRem(15);
+    background-color: #333;
+  }
 }

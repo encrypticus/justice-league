@@ -40,6 +40,13 @@ ul {
   max-width: $container-max-width;
 }
 
+.onoffcanvas {
+  background-color: $black;
+  &__inner {
+    padding: 0 pxToRem(15);
+  }
+}
+
 @import '../partials/page-header/page-header';
 @import '../components/main-nav/main-nav';
 //@import '../partials/nav-bar/nav-bar';
