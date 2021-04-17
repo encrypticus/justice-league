@@ -1,0 +1,39 @@
+.button {
+  $block-name: &; // #{$block-name}__element
+
+  display: inline-block;
+  padding: pxToRem(15) pxToRem(30);
+  font-size: pxToRem(16);
+  font-family: Mulish, Arial, sans-serif;
+  font-weight: 800;
+  line-height: pxToRem(20);
+  color: #323232;
+  background-color: $white;
+  border-radius: pxToRem(100);
+  text-decoration: none;
+
+  &_colored {
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+    color: $white;
+  }
+
+  &_icon {
+    position: relative;
+    padding-left: pxToRem(60);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: pxToRem(30);
+      transform: translateY(-50%);
+      display: block;
+      width: pxToRem(14);
+      height: pxToRem(18);
+      background-image: url(img/rect.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

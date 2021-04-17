@@ -3,8 +3,10 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
+  xxl: 1400px,
 );
+
 @import '~bootstrap/scss/mixins/breakpoints';
 
 @import 'variables';
@@ -13,14 +15,19 @@ $grid-breakpoints: (
 
 html {
   height: 100%;
-  font-size: $font-size;
+  font-size: 16px;
   font-family: $font-family;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size;
+  }
 }
 
 body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: $black;
 }
 
 ul {
@@ -52,3 +59,5 @@ ul {
 //@import '../partials/nav-bar/nav-bar';
 @import '../components/logo/logo';
 @import '../components/user-bar/user-bar';
+@import '../partials/banner/banner';
+@import '../components/button/button';

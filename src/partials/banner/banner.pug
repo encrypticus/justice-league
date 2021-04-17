@@ -1,0 +1,30 @@
+section.banner
+  .container-fluid
+    .row
+      .col.col-lg-5
+        .banner-info
+          h1.banner-info__title Zack Snyder's Justice League
+          .banner-info__header
+            span.banner-info__year 2021
+            span.banner-info__age 18+
+            span.banner-info__duration 4h 2min
+            span.banner-info__rating 8.8
+          p.banner-info__text
+            | Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne
+            | aligns forces with Diana Prince with plans to recruit a team of metahumans to protect
+            | the world from an approaching threat of catastrophic proportions.
+          .banner-info__buttons
+            +button({
+              label: 'Watch',
+              href: '#'
+            }, 'colored,icon')
+            .banner-info__button-wrapper
+              +button({
+                label: 'More information',
+                href: '#'
+              })
+
+
+      .col.d-none.d-lg-block
+        .banner__image-wrapper
+          img.banner__image(src="../../partials/banner/img/banner.jpg", alt="Banner")

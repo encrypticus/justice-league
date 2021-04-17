@@ -1,0 +1,13 @@
+mixin button({ label, href }, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' button_' + modsList[i].trim();
+      }
+    }
+
+  a.button(class=allMods, href=href)&attributes(attributes)= label
+    
