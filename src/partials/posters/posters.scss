@@ -1,0 +1,14 @@
+.posters {
+
+  &__link-wrapper {
+    margin-bottom: pxToRem(40);
+  }
+
+  &__row {
+    margin-bottom: pxToRem(34);
+
+    &_second {
+      margin-bottom: pxToRem(21);
+    }
+  }
+}

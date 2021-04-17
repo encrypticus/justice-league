@@ -1,0 +1,33 @@
+section.posters
+  .container-fluid
+    .posters__link-wrapper
+      +posters-link({
+        label: 'Trending TV Shows',
+        href: '#'
+      })
+
+    .row.posters__row
+      - var i = 1;
+        while i < 7
+          - var src = `../../components/poster/img/poster${i}.png`;
+          .col-12.col-sm-6.col-md-4.col-lg-3.col-xxl-2
+            +poster(src)
+          - i++
+
+    .posters__link-wrapper
+      +posters-link({
+        label: 'Trending Movies',
+        href: '#'
+      })
+
+    .row.posters__row.posters__row_second
+      - var i = 7;
+        while i < 13
+          - var src = `../../components/poster/img/poster${i}.png`;
+          .col-12.col-sm-6.col-md-4.col-lg-3.col-xxl-2
+            +poster(src)
+          - i++
+    +button({
+      label: 'See more',
+      href: '#'
+    }, 'colored')

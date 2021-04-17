@@ -1,0 +1,37 @@
+.poster {
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: pxToRem(30);
+
+  &__wrapper {
+    width: 80%;
+    border-radius: pxToRem(30);
+    overflow: hidden;
+    transition: box-shadow .3s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 10px .5px #26FFF2;
+
+      #{$block-name}__image {
+        transform: scale(1.1);
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    transition: transform .3s;
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
+  }
+}

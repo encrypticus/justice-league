@@ -1,0 +1,15 @@
+mixin poster(src, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' poster_' + modsList[i].trim();
+      }
+    }
+
+  .poster(class=allMods)&attributes(attributes)
+    .poster__wrapper.lightbox
+      img.poster__image.lightbox__img(src=src, alt="Poster")
+    

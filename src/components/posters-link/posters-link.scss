@@ -1,0 +1,38 @@
+.posters-link {
+  $block-name: &; // #{$block-name}__element
+
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  font-size: pxToRem(28);
+  font-weight: bold;
+  line-height: pxToRem(20);
+  color: $white;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: pxToRem(8);
+    height: pxToRem(35);
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    border-radius: 50px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: pxToRem(-24);
+    display: block;
+    width: pxToRem(10);
+    height: pxToRem(16);
+    transform: translateY(-50%);
+    background-image: url(img/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
