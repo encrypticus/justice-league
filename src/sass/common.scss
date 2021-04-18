@@ -54,10 +54,6 @@ ul {
   }
 }
 
-main {
-  margin-bottom: 500px;
-}
-
 @import '../partials/page-header/page-header';
 @import '../components/main-nav/main-nav';
 //@import '../partials/nav-bar/nav-bar';
@@ -74,3 +70,4 @@ main {
 @import '../partials/persons/persons';
 @import '../components/person/person';
 @import '../partials/promo/promo';
+@import '../partials/register/register';

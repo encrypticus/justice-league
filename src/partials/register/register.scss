@@ -1,0 +1,70 @@
+.register {
+  margin-bottom: pxToRem(121);
+
+  &__content {
+    //padding: 71px 0 57px 71px;
+    position: relative;
+    padding: pxToRem(50) pxToRem(20);
+    border-radius: pxToRem(20);
+    backdrop-filter: blur(50px);
+    background-image: url(img/register.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: pxToRem(68);
+      padding-bottom: pxToRem(73);
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    margin-bottom: pxToRem(30);
+    font-size: pxToRem(40);
+    font-weight: bold;
+    line-height: 100%;
+    color: $white;
+    text-align: center;
+    border-radius: 20px;
+    text-transform: capitalize;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: pxToRem(36);
+      font-size: pxToRem(64);
+      text-align: left;
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      justify-content: flex-start;
+    }
+  }
+}
