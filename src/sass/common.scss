@@ -37,9 +37,11 @@ ul {
 }
 
 .page-wrapper {
+  width: 100%;
   max-width: $page-wrapper-max-width;
   min-width: $page-wrapper-min-width;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-fluid,
@@ -71,3 +73,4 @@ ul {
 @import '../components/person/person';
 @import '../partials/promo/promo';
 @import '../partials/register/register';
+@import '../partials/footer/footer';

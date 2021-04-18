@@ -1,0 +1,23 @@
+.page-footer {
+  padding-top: pxToRem(35);
+
+  @include media-breakpoint-up(xl) {
+    padding-top: pxToRem(70);
+  }
+
+  &__links {
+    margin-bottom: pxToRem(30);
+  }
+
+  &__links-item {
+    margin-bottom: pxToRem(17);
+  }
+
+  &__link {
+    font-size: pxToRem(18);
+    font-weight: 600;
+    line-height: pxToRem(20);
+    color: #C2C2C2;
+    text-decoration: none;
+  }
+}
