@@ -1,0 +1,16 @@
+mixin genre({ label, icon }, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' genre_' + modsList[i].trim();
+      }
+    }
+
+  .genre(class=allMods)&attributes(attributes)
+    a.genre__link(href="#")
+      img.genre__image(src=icon, alt=label)
+      h2.genre__label= label
+    
