@@ -32,7 +32,28 @@ module.exports = () => {
     miniCssExtractPlugin(),
     processCss(),
     processSassScss(),
-    processImages(),
+    processImages({
+      imageWebpackLoader: {
+        mozjpeg: {
+          progressive: true,
+          quality: 90
+        },
+        optipng: {
+          enabled: false,
+        },
+        pngquant: {
+          quality: [0.90, 0.90],
+          speed: 4
+        },
+        gifsicle: {
+          interlaced: false,
+        },
+        webp: {
+          quality: 90
+        },
+        svgo: {}
+      }
+    }),
     processFonts(),
     processPug(),
     processHtml(),
