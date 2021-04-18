@@ -1,0 +1,32 @@
+.person {
+  $block-name: &; // #{$block-name}__element
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      #{$block-name}__icon {
+        transform: rotate(10deg);
+      }
+    }
+  }
+
+  &__icon {
+    transition: transform .3s;
+  }
+
+  &__name {
+    margin-top: pxToRem(22);
+    margin-bottom: pxToRem(30);
+    font-size: inherit;
+    font-weight: bold;
+    line-height: pxToRem(20);
+    color: $white;
+    text-align: center;
+  }
+
+}

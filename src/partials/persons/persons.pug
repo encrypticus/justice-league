@@ -1,0 +1,19 @@
+section.persons
+  include persons.data.pug
+
+  .container-fluid
+    .posters__link-wrapper
+      +posters-link({
+        label: 'Popular Actors & Directors',
+        href: '#'
+      })
+
+    .row
+      each person in persons
+        .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
+          - var image = `${person.name}.png`;
+          +person({
+            name: person.name,
+            icon: `../../partials/persons/img/${image}`,
+            href: '#'
+          })

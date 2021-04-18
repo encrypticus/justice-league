@@ -1,0 +1,17 @@
+mixin person({ name, icon, href }, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' person_' + modsList[i].trim();
+      }
+    }
+
+  .person(class=allMods)&attributes(attributes)
+    a.person__link(href=href)
+      img.person__icon(src=icon, alt=name)
+      h3.person__name= name
+
+    
