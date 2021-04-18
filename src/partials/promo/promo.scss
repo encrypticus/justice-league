@@ -1,0 +1,68 @@
+.promo {
+  margin-bottom: pxToRem(121);
+
+  &__banner {
+    border-radius: pxToRem(20);
+    background: linear-gradient(87.02deg, #0D1A73 29.67%, #000 70.52%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+  }
+
+  &__bunny {
+    margin-bottom: pxToRem(30);
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__soon {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    display: block;
+
+    &_bunny {
+      width: 100%;
+      height: auto;
+    }
+
+    &_soon {
+      @include media-breakpoint-up(lg) {
+        width: 70%;
+      }
+
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        margin-left: pxToRem(-33);
+        margin-top: pxToRem(33);
+      }
+    }
+  }
+
+  &__text {
+    margin: pxToRem(31) 0;
+    font-size: pxToRem(32);
+    font-weight: bold;
+    line-height: pxToRem(20);
+    color: $white;
+    text-align: center;
+    text-transform: capitalize;
+
+    @include media-breakpoint-up(xl) {
+      font-size: pxToRem(64);
+    }
+
+    @include media-breakpoint-up(xxl){
+      margin-right: pxToRem(33);
+    }
+  }
+}
