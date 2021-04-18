@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter-kit",
+  "name": "justice-league",
   "version": "1.0.0",
-  "description": "Стартовый репозиторий для frontend-разработки c webpack на борту",
+  "description": "Макет для вёрстки justice league",
   "main": "index.js",
   "scripts": {
     "browser-sync": "cross-env mode=development webpack --mode development --watch",
@@ -11,21 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encrypticus/webpack-starter-kit.git"
+    "url": "git+https://github.com/encrypticus/justice-league.git"
   },
-  "keywords": [
-    "webpack",
-    "webpack boilerplate",
-    "webpack starter kit",
-    "frontend starter kit",
-    "frontend boilerplate"
-  ],
   "author": "Alexander Timofeev aka encrypticus",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/encrypticus/webpack-starter-kit/issues"
-  },
-  "homepage": "https://github.com/encrypticus/webpack-starter-kit#readme",
   "browserslist": [
     "defaults"
   ],

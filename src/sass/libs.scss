@@ -1,29 +1,9 @@
 @import '~bootstrap/scss/bootstrap-grid';
 
 $hamburger-layer-width: 30px;
-//$hamburger-layer-height: 4px;
-//$hamburger-layer-spacing: 6px;
-//$hamburger-padding: 10px;
-//$hamburger-layer-border-radius: 4px;
 $hamburger-layer-color: #fff;
-//$hamburger-types: (
-//  simple,
-//  collapse,
-//  storm,
-//  juggler,
-//  shurikens,
-//  shurikens-r,
-//  shurikens-alt,
-//  shurikens-alt-r,
-//  minify,
-//  arrowturn,
-//  arrowturn-r,
-//  arrowdown,
-//  arrowdown-r,
-//  magic,
-//  3d,
-//  alchemy,
-//  alchemy-r
-//);
+$hamburger-types: (
+  minify
+);
 @import '~magic-burgers/src/scss/hamburger';
 @import '~metismenujs/scss/metismenujs';
